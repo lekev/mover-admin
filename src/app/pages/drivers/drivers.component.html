@@ -1,0 +1,149 @@
+<div class="row">
+  <div class="col-4" >
+    <div class="sidebar">
+      <div class="bug-list-sidebar-content">
+        <!-- Predefined Views -->
+        <div class="card">
+          <div class="card-head">
+            <div class="media p-1">
+              <div class="media-left pr-1">
+                    <span class="avatar avatar-sm avatar-online rounded-circle">
+                      <img src="../../../app-assets/images/portrait/small/avatar-s-1.png" alt="avatar"><i></i></span>
+              </div>
+              <div class="media-body media-middle">
+                <h5 class="media-heading">Margaret Govan</h5>
+              </div>
+            </div>
+          </div>
+          <!-- contacts search -->
+          <div class="card-body border-top-blue-grey border-top-lighten-5">
+            <div class="bug-list-search">
+              <div class="bug-list-search-content">
+                <form action="#">
+                  <div class="position-relative">
+                    <input type="search" id="search-contacts" class="form-control" placeholder="Search contacts...">
+                    <div class="form-control-position">
+                      <i class="la la-search text-size-base text-muted"></i>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /contacts search -->
+          <!-- contacts view -->
+          <div class="card-body">
+            <div class="list-group">
+              <a href="#" class="list-group-item active">All Contacts</a>
+              <a href="#" class="list-group-item list-group-item-action">Recently contacted</a>
+              <a href="#" class="list-group-item list-group-item-action">Favorite contacts</a>
+            </div>
+          </div>
+          <!-- Groups-->
+          <div class="card-body">
+            <p class="lead">Groups</p>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge badge-primary badge-pill float-right">14</span> <a href="#"> Project</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge badge-info badge-pill float-right">22</span> <a href="#"> Team</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge badge-warning badge-pill float-right">10</span> <a href="#"> Clients</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge badge-success badge-pill float-right">5</span> <a href="#"> Friends</a>
+              </li>
+            </ul>
+          </div>
+          <!--/ Groups-->
+          <!--More-->
+          <div class="card-body ">
+            <p class="lead">More</p>
+            <ul class="list-group">
+              <li><a href="#" class="list-group-item">Import</a></li>
+              <li><a href="#" class="list-group-item">Export</a></li>
+              <li><a href="#" class="list-group-item">Print</a></li>
+              <li><a href="#" class="list-group-item">Restore contacts</a></li>
+              <li><a href="#" class="list-group-item">Find duplicate</a></li>
+            </ul>
+          </div>
+          <!--/More-->
+        </div>
+        <!--/ Predefined Views -->
+      </div>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="content-body">
+      <section class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-head">
+              <div class="card-header">
+                <h4 class="card-title">All Contacts</h4>
+                <a class="heading-elements-toggle"><i class="la la-ellipsis-h font-medium-3"></i></a>
+
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-body">
+                <!-- Task List table -->
+                <div class="table-responsive">
+                  <div id="users-contacts_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="users-contacts_length"><label>Show <select name="users-contacts_length" aria-controls="users-contacts" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="users-contacts_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="users-contacts"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="users-contacts" class="table table-white-space table-bordered row-grouping display no-wrap icheck table-middle dataTable" role="grid" aria-describedby="users-contacts_info">
+                    <thead>
+                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="users-contacts" rowspan="1" colspan="1" aria-label=": activate to sort column descending" style="width: 11px;" aria-sort="ascending"></th><th class="sorting" tabindex="0" aria-controls="users-contacts" rowspan="1" colspan="1" aria-label="Name: activate to sort column ascending" style="width: 150px;">Name</th><th class="sorting" tabindex="0" aria-controls="users-contacts" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 160px;">Email</th><th class="sorting" tabindex="0" aria-controls="users-contacts" rowspan="1" colspan="1" aria-label="Phone: activate to sort column ascending" style="width: 87.5px;">Phone</th><th class="sorting" tabindex="0" aria-controls="users-contacts" rowspan="1" colspan="1" aria-label="Favorite: activate to sort column ascending" style="width: 58px;">Favorite</th><th class="sorting" tabindex="0" aria-controls="users-contacts" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 60.5px;">Actions</th></tr>
+                    </thead>
+                    <tbody>
+
+                    <tr *ngFor="let user of users" role="row" class="odd">
+                      <td class="sorting_1">
+                        <div class="icheckbox_square-blue" style="position: relative;"><input type="checkbox" class="input-chk" style="position: absolute; opacity: 0;"><ins class="iCheck-helper" style="position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins></div>
+                      </td>
+                      <td>
+                        <div class="media">
+                          <div class="media-left pr-1">
+                                  <span >
+                                    <img class="user-img" [src]=user.photoURL alt="avatar"><i></i></span>
+                          </div>
+                          <div class="media-body media-middle">
+                            <a href="#" class="media-heading">{{user.displayName}}</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-center">
+                        <a href="{{user.email}}">{{user.email}}</a>
+                      </td>
+                      <td>+658-254-256</td>
+                      <td>{{user.group}}</td>
+                      <td class="text-center"><i class="la la-star  yellow darken-2"></i></td>
+                      <td>
+                              <span class="dropdown">
+                                <button id="btnSearchDrop2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" class="btn btn-primary dropdown-toggle dropdown-menu-right"><i class="ft-settings"></i></button>
+                                <span aria-labelledby="btnSearchDrop2" class="dropdown-menu mt-1 dropdown-menu-right">
+                                  <a href="#" class="dropdown-item"><i class="ft-edit-2"></i> Edit</a>
+                                  <a href="#" class="dropdown-item"><i class="ft-trash-2"></i> Delete</a>
+                                  <a href="#" class="dropdown-item"><i class="ft-plus-circle primary"></i> Projects</a>
+                                  <a href="#" class="dropdown-item"><i class="ft-plus-circle info"></i> Team</a>
+                                  <a href="#" class="dropdown-item"><i class="ft-plus-circle warning"></i> Clients</a>
+                                  <a href="#" class="dropdown-item"><i class="ft-plus-circle success"></i> Friends</a>
+                                </span>
+                              </span>
+                      </td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr><th rowspan="1" colspan="1"></th><th rowspan="1" colspan="1">Name</th><th rowspan="1" colspan="1">Email</th><th rowspan="1" colspan="1">Phone</th><th rowspan="1" colspan="1">Favorite</th><th rowspan="1" colspan="1">Actions</th></tr>
+                    </tfoot>
+                  </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="users-contacts_info" role="status" aria-live="polite">Showing 1 to 10 of 30 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="users-contacts_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="users-contacts_previous"><a href="#" aria-controls="users-contacts" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="users-contacts" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="users-contacts" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="users-contacts" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item next" id="users-contacts_next"><a href="#" aria-controls="users-contacts" data-dt-idx="4" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</div>
